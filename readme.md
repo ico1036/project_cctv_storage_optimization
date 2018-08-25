@@ -5,7 +5,7 @@
 
 ### 필요 라이브러리 설치
 
->pip install numpy <%s>
->python -m pip install opencv-contrib-python <%s>
->pip install --upgrade scikit-image <%s>
+>pip install numpy  
+>python -m pip install opencv-contrib-python  
+>pip install --upgrade scikit-image  
 
