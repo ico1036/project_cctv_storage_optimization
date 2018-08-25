@@ -3,9 +3,14 @@
 ### 언어는 파이썬2.7 기준 입니다
 
 
-### 필요 라이브러리 설치
+### **필요 라이브러리 설치
 
 >pip install numpy  
 >python -m pip install opencv-contrib-python  
 >pip install --upgrade scikit-image  
 
+####목표
+**     
+cv_04_editVID.py (영상 자르기 알고리즘) 에 imagediff.py (이미지 비교 알고리즘) 을 접목시켜서  
+최종 코드를 만듭니다  
+**
