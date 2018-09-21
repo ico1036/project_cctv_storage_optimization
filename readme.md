@@ -9,8 +9,14 @@
 >python -m pip install opencv-contrib-python  
 >pip install --upgrade scikit-image  
 
-####목표
+#### 절차
 **     
-cv_04_editVID.py (영상 자르기 알고리즘) 에 imagediff.py (이미지 비교 알고리즘) 을 접목시켜서  
-최종 코드를 만듭니다  
+#### 1) V01_project.py -> 실행코드  
+####    -long_01.mp4,long_01.mp4 -> 테스트 원본파일 ( 실행코드에  input 으로 넣어줍니다 )  
+####    -out_01.avi,out_02.avi   -> V01_project.py 를 실행시키면 나오는 output 파일 (수정된 파일) 입니다  
+#### output 파일을 확인하려면 cv_02_readVID.py 코드에 output 파일을 input 으로 넣습니다  
+  
+#### 2) 필요한 부분만 잘 나오는지 확인합니다  
+  
+#### 3) ls -alh 커맨드를 처서(리눅스) 용량이 얼마나 줄었는지 확인합니다  
 **

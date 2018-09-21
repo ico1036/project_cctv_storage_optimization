@@ -6,7 +6,7 @@ import cv2
 def showVideo():
 	
 	cap = cv2.VideoCapture('/home/jkim/gitdir/project_cctv_storage_optimization/long_01.mp4')
-	
+	# Input file
 
 	fps=20.0
 	width  = int(cap.get(3))
@@ -14,7 +14,7 @@ def showVideo():
 
 	fcc = cv2.VideoWriter_fourcc('D','I','V','X')
 	out = cv2.VideoWriter('out_01.avi', fcc, fps, (width,height))
-
+	#output file
 	
 
 	CurrentFrame=0
