@@ -5,7 +5,7 @@ import cv2
 
 def showVideo():
 	
-	cap = cv2.VideoCapture('videos/test3.mp4')
+	cap = cv2.VideoCapture('/home/jkim/gitdir/project_cctv_storage_optimization/out_01.avi')
 	#비디오객체를 반환한다
 
 	cap.set(3,480)

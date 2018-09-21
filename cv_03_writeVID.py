@@ -31,7 +31,6 @@ def showVideo():
 			break
 		cv2.imshow('video', frame)
 		out.write(frame)
-		
 		k =cv2.waitKey(1) & 0xFF
 		if k == 27:
 			print('녹화를 종료합니다')

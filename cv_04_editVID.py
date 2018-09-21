@@ -5,7 +5,7 @@ import cv2
 
 def showVideo():
 	
-	cap = cv2.VideoCapture('videos/test3.mp4')
+	cap = cv2.VideoCapture('/home/jkim/gitdir/opencv/videos/test3.mp4')
 	
 
 	fps=20.0
@@ -13,12 +13,12 @@ def showVideo():
 	height = int(cap.get(4))
 
 	fcc = cv2.VideoWriter_fourcc('D','I','V','X')
-	out = cv2.VideoWriter('sample1.avi', fcc, fps, (width,height))
+	out = cv2.VideoWriter('sample2.avi', fcc, fps, (width,height))
 
 	
 
 	CurrentFrame=0
-	StartFrame=150
+	StartFrame=50
 	EndFrame=151
 	# 현재 프레임 계산에 이용할 CurrentFrame
 	# 시작 프레임 설정 StartFrame 
@@ -35,7 +35,7 @@ def showVideo():
 		if not ret:
 			print("read error")
 			break
-			
+		frame=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)	
 		cv2.imshow('video', frame)
 		out.write(frame)
 		#녹화와 출력은 동시에 이루어집니다		

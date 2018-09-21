@@ -5,7 +5,7 @@ import cv2
 
 def showVideo():
 	
-	cap = cv2.VideoCapture('/home/jkim/gitdir/opencv/videos/test3.mp4')
+	cap = cv2.VideoCapture('/home/jkim/gitdir/project_cctv_storage_optimization/long_01.mp4')
 	
 
 	fps=20.0
@@ -13,13 +13,13 @@ def showVideo():
 	height = int(cap.get(4))
 
 	fcc = cv2.VideoWriter_fourcc('D','I','V','X')
-	out = cv2.VideoWriter('sample2.avi', fcc, fps, (width,height))
+	out = cv2.VideoWriter('out_01.avi', fcc, fps, (width,height))
 
 	
 
 	CurrentFrame=0
 	StartFrame=0
-	EndFrame=300
+	EndFrame=1000
 	# 현재 프레임 계산에 이용할 CurrentFrame
 	# 시작 프레임 설정 StartFrame 
 	# 종료 프레임 설정 EndFrame
@@ -45,7 +45,7 @@ def showVideo():
 			(score, diff) = compare_ssim(gframe, cprimg, full=True)
 		
 		cprimg = gframe	
-		if score < 0.9:
+		if score < 0.99:
 			cv2.imshow('video', frame)
 			out.write(frame)
 			# SSIM이 0.9 보다 작을 때 에만 영상을 기록합니다
