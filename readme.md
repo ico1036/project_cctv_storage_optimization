@@ -12,7 +12,7 @@
 #### 절차
 **     
 #### 1) V01_project.py -> 실행코드  
-####    -long_01.mp4,long_01.mp4 -> 테스트 원본파일 ( 실행코드에  input 으로 넣어줍니다 )  
+####    -long_01.mp4,long_02.mp4 -> 테스트 원본파일 ( 실행코드에  input 으로 넣어줍니다 )  
 ####    -out_01.avi,out_02.avi   -> V01_project.py 를 실행시키면 나오는 output 파일 (수정된 파일) 입니다  
 #### output 파일을 확인하려면 cv_02_readVID.py 코드에 output 파일을 input 으로 넣습니다  
   
